@@ -1,0 +1,156 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="Name.png" class="name">
+    <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+     <div class="header-text">
+        <p>Student</p>
+        <h1>It's me<span> Aiza Shafqat</span><br>from Rawalpindi,Pakistan</h1>
+     </div>
+     </div>
+        </div>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aizapersonal.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class= "sub-title">About Me</h1>
+                    <p>My name is Aiza shafqat.I am from Rawalpindi.I am studying CS from Institute of Space Technology Islamabad. In the future I want to become an army officer (Captain).</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-tab" onclick="opentab('personal')">Personal Info</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="personal">
+                        <ul>
+                          <li><span>Father's Name : </span><br>Shafqat Mehmood</li>
+                          <li><span>Date of Birth : </span><br>12-Oct-2003</li>
+                          <li><span>CNIC : </span><br>37405-4876335-4</li>
+                          <li><span>Status : </span><br>Single</li>
+                          <li><span>Language(s) : </span><br>Urdu, English, Punjabi</li>
+                          <li><span>Address : </span><br>Riaz chowk near ARL ground morgah Rawalpindi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                          <li><span>Communication</span><br>Good communication skill</li>
+                          <li><span>Internet</span><br>Internet exploring</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                          <li><span>Teaching</span><br>2 Year's Experience as a Private Teacher.</li>
+                          <li><span>Content Writing</span><br>1 Year Experience as a Content Writer.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span Askari 14.n>Matric : 2020 </span><br>Matric with Computer Science<span>  From  </span>APSAC, Askari 14.</li>
+                          <li><span>Intermediate : 2022 </span><br>FSc Pre-Engineering <span>  From  </span>APSAC, Fort Road.</li>
+                          <li><span>Bachelor : 2022 </span><br>BS Computer Science <span>  From  </span>IST University, Islamabad.</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+<!---------Portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Content.jpg">
+                <div class="layer">
+                    <h3>Content Writing</h3>
+                    <p>I have done may works on different websites and have write many Articles, and Blogs etc</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Social.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media Marketing</h3>
+                    <p>I have done many projects related to Social Media Marketing like YT Subscribers, FB Followers, Website Traffic.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="CV.jpg" alt="">
+                <div class="layer">
+                    <h3>CV Maker</h3>
+                    <p>I have done many Orders on CV Making, Resume Making, etc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Contact Me-->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa fa-envelope" style="font-size:24px"></i>aizashafqat44@gmail.com</p>
+            <p><i class="fa fa-phone" style="font-size:24px"></i>+923180542012</p>
+        </div>
+<div class="socials">
+   <div class="facebook">
+      <a href="" target="_blank"><i class="fa fa-facebook-official" style="font-size:80px;"></i></a>
+   </div>
+   <div class="twitter">
+      <a href="" target="_blank"><i class="fa fa-twitter-square" style="font-size:80px"></i></a>
+   </div>
+   <div class="github">
+      <a href="" target="_blank"><i class="fa fa-github-square" style="font-size:80px"></i></a>
+   </div>
+   <div class="reddit">
+      <a href="" target="_blank"><i class="fa fa-reddit-square" style="font-size:80px"></i></a>
+   </div>
+</div>
+
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Submit Here</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Aiza Shafqat, Developed By Aiza Shafqat</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
